@@ -8,11 +8,11 @@
 let sum = 0;
 let number = 1;
 
-while (number < 21) {
+while (number <= 21) {
   if (number % 2 === 1) {
-    sum += number
-    number += 1
+    sum += number;
   }
-};
+  number += 1;
+}
 
 console.log(sum);
