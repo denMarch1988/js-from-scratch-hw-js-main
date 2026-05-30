@@ -6,7 +6,7 @@
 
 const score = 70 // тестовое значение, можно изменять
 let grade
-if (score < 50) {
+if (score >= 0 && score < 50) {
     console.log("F")
 } else if (score >= 50 && score < 70) {
     console.log("D")
