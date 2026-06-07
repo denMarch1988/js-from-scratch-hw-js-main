@@ -8,7 +8,7 @@
 */
 
 // тестовые данные (значения можно менять)
-if (isAdmin & hasSpecialPermission) {
+if (isAdmin & (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true;
 } else if (isVerifiedUser & (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true;
