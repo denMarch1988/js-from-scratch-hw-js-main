@@ -17,4 +17,6 @@ let isAccess
 
 if ((isAdmin || isVerifiedUser) & (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true;
+} else if ((isAdmin & isVerifiedUser) || (hasSpecialPermission & hasTemporaryPass)) {
+    isAccess = true;
 } // your code
