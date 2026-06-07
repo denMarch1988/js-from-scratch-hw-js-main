@@ -8,15 +8,12 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass =  false
-
-let isAccess
-
-if ((isAdmin || isVerifiedUser) & (hasSpecialPermission || hasTemporaryPass)) {
+if (isAdmin & hasSpecialPermission) {
     isAccess = true;
-} else if ((isAdmin & isVerifiedUser) || (hasSpecialPermission & hasTemporaryPass)) {
+} else if (isVerifiedUser & (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true;
-} // your code
+} else if (!isVerifiedUser & (hasSpecialPermission || hasTemporaryPass)) {
+    isAccess = false;
+}
+
+// your code
