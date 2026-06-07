@@ -1,14 +1,10 @@
 // Разработайте функцию isEven, которая определяет, чётное ли число.
 // 
 
-function isEven(number) {
-    if (number === 0) {
-        return false
-    } else if (number % 2 === 0) {
-        return true
-    } else {
-        return false
-    };
+function isEven(n) {
+    function isEven(n) {
+        return n % 2 === 0;
+    }
 }
 
 console.log(isEven(0));
