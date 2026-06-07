@@ -19,5 +19,7 @@ if (isAdmin && hasSpecialPermission ||
    isVerifiedUser && hasTemporaryPass ||
    (isVerifiedUser || !hasSpecialPermission && !hasTemporaryPass)) {
     isAccess = true;
+} else if (isVerifiedUser && !hasSpecialPermission && !hasTemporaryPass) {
+   isAccess = false;
 }
 // your code
