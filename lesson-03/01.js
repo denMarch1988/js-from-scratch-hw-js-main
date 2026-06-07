@@ -1,8 +1,7 @@
 // Напишите функцию calculateAverage, которая принимает 2 числа и возвращает их среднее арифметическое
 
 function calculateAverage(a, b) {
-    sum = (a + b) / 2;
-    return sum;
+    return (a + b) / 2;
 }
 
-calculateAverage(5, 10)
+sum = calculateAverage(5, 10)
