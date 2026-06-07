@@ -2,9 +2,8 @@
 // 
 
 function isEven(n) {
-    function isEven(n) {
-        return n % 2 === 0;
-    }
+    return n % 2 === 0;
 }
 
-console.log(isEven(0));
+
+console.log(isEven(2));
