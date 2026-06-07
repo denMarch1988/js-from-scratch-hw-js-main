@@ -1,11 +1,7 @@
 // Разработайте функцию findLargest, которая принимает три числа и возвращает наибольшее из них.
 
 function findLargest(a, b, c) {
-    if (a > b && a > c) {
-        return a
-    } else if (b > c && b > a) {
-        return b
-    } else { return c }
+    return Math.max(a, b, c);
 }
 
-console.log(findLargest(4, 5, 6))
+console.log(findLargest(6, 6, 6));
