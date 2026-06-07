@@ -1,7 +1,11 @@
-// Напишите функцию calculateAverage, которая принимает 2 числа и возвращает их среднее арифметическое
+// Разработайте функцию findLargest, которая принимает три числа и возвращает наибольшее из них.
 
-function calculateAverage(a, b) {
-    return (a + b) / 2;
+function findLargest(a, b, c) {
+    if (a > b && a > c) {
+        return a
+    } else if (b > c && b > a) {
+        return b
+    } else { return c }
 }
 
-console.log(calculateAverage(10, 20));
+console.log(findLargest(4, 5, 6))
