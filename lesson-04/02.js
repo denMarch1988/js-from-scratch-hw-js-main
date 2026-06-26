@@ -23,7 +23,7 @@ function findUniqueElements(array) {
             newArr.push(array[i])
         }
     }
-    return newArr;
+    return newArr
 }
 
 console.log(findUniqueElements(arr));
