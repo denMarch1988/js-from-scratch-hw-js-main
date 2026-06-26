@@ -24,10 +24,10 @@ function findCommonElements(arr1, arr2) {
     let newArr = [];
     for (let i = 0; i < arr2.length; i++) {
         if (arr1.indexOf(arr2[i]) !== -1) {
-            newArr.push(arr2[i])
+            newArr.push(arr2[i]);
         }
     }
-    return newArr
+    return newArr;
 }
 
 
