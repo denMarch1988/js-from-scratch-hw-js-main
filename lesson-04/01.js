@@ -18,7 +18,7 @@ const array = [1, 2, 3];
 function includesElement(array, element) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === element) {
-            return trueж;
+            return true;
         }
     }
     return false;
