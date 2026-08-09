@@ -5,5 +5,17 @@
   🧙‍♂️Эту задачу можно решить при помощь цикла for. Рекомендуем реализовать этот вариант решения, как самый эффективный.
   Другой вариант - использовать метод split строк, и метод массива join.
 */
+let str = "hello world from javascript"
+let res
+function capitalizeWords(str) {
+  
+  let str2 = str.split(" ")
+  for (let index = 0; index < str2.length; index++) {
+    let el = str2[index][0].toUpperCase() + str2[index].slice(1)
+    str2[index] = el
+    res = str2.join(' ')
+  }
+  console.log(res);
+}
 
-function capitalizeWords() {}
+capitalizeWords(str);
