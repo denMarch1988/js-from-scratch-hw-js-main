@@ -8,7 +8,14 @@
 * truncate("Вот, что мне действительно нравится в этом", 20) // Ожидаемый результат: "Вот, что мне действи..."
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
-
+console.log()
 function truncate(str, maxLength) {
-  // your code
+  if (str.length >= maxLength) {
+    let res = str.slice(0, maxLength) + "..."
+    return res
+  } else {
+    return str
+  }
 }
+
+console.log(truncate("Вот, что мне действительно нравится в этом", 20));
