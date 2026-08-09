@@ -35,7 +35,7 @@ function filter(array, callback) {
   return result;
 }
 
-const numbers ;
+const numbers = [1, 2, 3, 4, 5];
 
 const evens = filter(numbers, (element, index) => {
   return element % 2 === 0;
