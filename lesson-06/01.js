@@ -22,10 +22,29 @@
 
 // console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 // */
-const numbers = [1, 2, 3, 4, 5]
 
-const filter = numbers.filter(function (num) {
-  return num % 2 === 0;
+function filter(array, callback) {
+  const result = [];
+  
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i], i)) {
+      result.push(array[i]);
+    }
+  }
+  
+  return result;
+}
+
+const numbers ;
+
+const evens = filter(numbers, (element, index) => {
+  return element % 2 === 0;
 });
 
-console.log(filter);
+console.log(evens); // [2, 4]
+
+
+// const filter = (element) => {return element.length > 3}
+// const result = filter(['cat', 'sheep', 'dog', 'wolf', 'dragon'], (element, index) => element.length > 3);
+
+// console.log(filter)
